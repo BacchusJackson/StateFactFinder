@@ -1,9 +1,18 @@
-public class State {
+/*
+ * File: StateFactFinder.State.java
+ * Author: Bacchus Jackson
+ * Date: July 7, 2019
+ * Purpose: Week 7 Assignment
+ */
+
+package StateFactFinder;
+
+class State {
   private String name;
   private String bird;
   private String flower;
 
-  public State(String stateName, String stateBird, String stateFlower) {
+  State(String stateName, String stateBird, String stateFlower) {
     name = stateName;
     bird = stateBird;
     flower = stateFlower;

@@ -1,9 +1,20 @@
-public class FactFinder {
+/*
+ * File: StateFactFinder.FactFinder.java
+ * Author: Bacchus Jackson
+ * Date: July 7, 2019
+ * Purpose: Week 7 Assignment
+ * A program that takes states as user input and displays the state bird and flower
+ * When the user types none, the program should print a summary of all queried states
+ */
+
+package StateFactFinder;
+
+class FactFinder {
   private State[] states;
   private String tableHeader;
   private String queryLog;
 
-  public FactFinder() {
+  FactFinder() {
 
     // Put all of the states and information into arrays
     states = new State[50];
@@ -61,13 +72,11 @@ public class FactFinder {
     // Build the header for table output
     StringBuilder headerBuilder = new StringBuilder();
 
-    // Append headers and divider
+    // Append header names
     headerBuilder.append(String.format("%-30s | %-30s | %-30s\n", "State", "State Bird", "State Flower"));
 
-    // Loop to add all of the dashes
-    for(int i = 0; i<6;i++) {
-      headerBuilder.append("----------------");
-    }
+    // Add divider
+    headerBuilder.append("-".repeat(96));
 
     // Add a line break
     headerBuilder.append("\n");
