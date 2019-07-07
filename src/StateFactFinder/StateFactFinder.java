@@ -11,7 +11,7 @@ package StateFactFinder;
 
 import java.util.Scanner;
 
-class Main {
+class StateFactFinder {
 
   public static void main(String[] args) {
     String inputString;
