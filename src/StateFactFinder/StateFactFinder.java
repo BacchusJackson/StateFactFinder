@@ -39,7 +39,7 @@ class StateFactFinder {
 
       while (running) {
 
-        System.out.print("Enter State or None to Exit: ");
+        System.out.print("\u001b[7mEnter State or None to Exit:\u001b[0m ");
         inputString = userInput.nextLine();
 
         if (inputString.equalsIgnoreCase("none")) {
